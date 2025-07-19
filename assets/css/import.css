@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #142EFA;
+    --breakpoint-1440: 1440px;
+    --font-Roboto: "Roboto Flex", sans-serif;
+    --font-Inter: "Inter", sans-serif;
+    --font-Manrope: "Manrope", sans-serif;
+}
+
+* {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.borderCustom {
+    @apply before:left-[-1px] before:right-[-1px] before:top-[-1px] before:bottom-[-1px] before:absolute before:-z-10
+}
+
+::selection {
+    background-color: #00000054;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0CC38B;
+}
+
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.loader img {
+    width: 48px;
+    height: 48px;
+    animation: logoAnimation 2s infinite ease-in-out;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 8px rgba(12, 195, 139, 0.8))
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 15px rgba(12, 195, 139, 0.5));
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 8px rgba(12, 195, 139, 0.8));
+    }
+}
+
+.loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.backdrop {
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #0a0a0a71;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.backdrop.active {
+    opacity: 1;
+}
+
+#mobileMenuContent.active {
+    right: 0;
+}
+
+.active>div>svg>path {
+    stroke-opacity: 1;
+}
