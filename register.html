@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCTAVA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-[#E3E3E3] flex flex-col items-center w-full">
+    <div class="flex bg-black justify-center py-2.5 px-2 w-full">
+      <span
+        class="text-white text-center font-medium leading-[130%] tracking-[-0.04em]"
+      >
+        Octava will never ask to connect your wallet to work with the platform
+      </span>
+    </div>
+
+    <div
+      class="flex max-w-[1872px] items-center w-full flex-col mt-8 p-4 1872:p-0"
+    >
+      <header class="flex gap-[24px] items-center">
+        <div class="flex items-center gap-2">
+          <img src="./assets/img/logo.svg" alt="" />
+          <span
+            class="text-black font-medium text-lg leading-[100%] tracking-[-0.04em]"
+          >
+            Octava
+          </span>
+        </div>
+        <button
+          onclick="window.location.href=config.url"
+          class="flex cursor-pointer items-center gap-1.5"
+        >
+          <span
+            class="text-xl hover:text-black transition-colors ease-in-out duration-300 leading-[100%] tracking-[-0.04em] text-black/50"
+          >
+            Visit
+          </span>
+          <img src="./assets/img/twitter.svg" alt="" />
+        </button>
+      </header>
+      <div
+        class="flex overflow-hidden flex-col items-center mt-[32px] w-full min-h-[760px] relative bg-black rounded-2xl"
+      >
+        <img
+          src="./assets/img/bg-main.png"
+          class="absolute left-1/2 -translate-x-1/2 top-0 z-10"
+          alt=""
+        />
+        <div
+          class="flex z-30 flex-col items-center w-full max-w-[456px] top-1/2 left-1/2 -translate-1/2 absolute p-8 bg-white rounded-xl gap-[9px]"
+        >
+          <span
+            class="text-black text-lg font-medium leading-[100%] tracking-[-0.04em]"
+          >
+            Registration
+          </span>
+          <div class="w-full h-[1px] bg-black/12"></div>
+          <div
+            class="flex w-full focus-within:border-primary focus-within:bg-primary/8 transition-colors ease-in-out duration-300 items-center gap-1 p-3 rounded-xl border border-black/24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M21.5001 8.988V17.375C21.5001 18.8247 20.3249 20 18.8751 20H5.12512C3.67537 20 2.5 18.8247 2.5 17.375V8.988L11.6989 14.0476C11.8865 14.1508 12.1138 14.1508 12.3013 14.0476L21.5001 8.988ZM18.8751 5C20.3038 5 21.4659 6.14138 21.4994 7.56204L12.0001 12.7867L2.501 7.562L2.50231 7.5168C2.55905 6.11722 3.71161 5 5.12512 5H18.8751Z"
+                fill="#0CC38B"
+              />
+            </svg>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="text-lg outline-none w-full leading-[100%] tracking-[-0.04em] placeholder:text-black/30 text-black"
+            />
+          </div>
+          <div
+            class="flex w-full focus-within:border-primary focus-within:bg-primary/8 transition-colors ease-in-out duration-300 items-center gap-1 p-3 rounded-xl border border-black/24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M21.5001 8.988V17.375C21.5001 18.8247 20.3249 20 18.8751 20H5.12512C3.67537 20 2.5 18.8247 2.5 17.375V8.988L11.6989 14.0476C11.8865 14.1508 12.1138 14.1508 12.3013 14.0476L21.5001 8.988ZM18.8751 5C20.3038 5 21.4659 6.14138 21.4994 7.56204L12.0001 12.7867L2.501 7.562L2.50231 7.5168C2.55905 6.11722 3.71161 5 5.12512 5H18.8751Z"
+                fill="#0CC38B"
+              />
+            </svg>
+            <input
+              type="password"
+              placeholder="Password"
+              class="text-lg outline-none w-full leading-[100%] tracking-[-0.04em] placeholder:text-black/30 text-black"
+            />
+          </div>
+          <div
+            class="flex w-full focus-within:border-primary focus-within:bg-primary/8 transition-colors ease-in-out duration-300 items-center gap-1 p-3 rounded-xl border border-black/24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M21.5001 8.988V17.375C21.5001 18.8247 20.3249 20 18.8751 20H5.12512C3.67537 20 2.5 18.8247 2.5 17.375V8.988L11.6989 14.0476C11.8865 14.1508 12.1138 14.1508 12.3013 14.0476L21.5001 8.988ZM18.8751 5C20.3038 5 21.4659 6.14138 21.4994 7.56204L12.0001 12.7867L2.501 7.562L2.50231 7.5168C2.55905 6.11722 3.71161 5 5.12512 5H18.8751Z"
+                fill="#0CC38B"
+              />
+            </svg>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              class="text-lg outline-none w-full leading-[100%] tracking-[-0.04em] placeholder:text-black/30 text-black"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-black/12"></div>
+          <button
+            onclick="submitForm()"
+            class="bg-primary w-full rounded-lg py-2.5 px-3 hover:bg-primary/75 duration-300 transition-colors ease-in-out cursor-pointer"
+          >
+            <span class="text-white leading-[100%] tracking-[-0.04em]">
+              Register
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function submitForm() {
+        var email = document.getElementById("email");
+        localStorage.setItem("email", email.value);
+
+        window.location.href = "dashboard";
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/loader.js"></script>
+  </body>
+</html>

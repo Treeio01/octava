@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #142EFA;
+    --color-primary: #0CC38B;
+    --breakpoint-1872: 1872px;
     --breakpoint-1440: 1440px;
+    --breakpoint-1300: 1300px;
     --font-Roboto: "Roboto Flex", sans-serif;
     --font-Inter: "Inter", sans-serif;
     --font-Manrope: "Manrope", sans-serif;
@@ -17,7 +19,7 @@
 }
 
 ::selection {
-    background-color: #00000054;
+    background-color: #0cc38c8d;
 }
 
 ::-webkit-scrollbar {
